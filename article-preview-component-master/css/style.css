@@ -1,0 +1,123 @@
+/* add animatio to heading primary main */
+/* for broser performance, best to only animate 2 properties */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10px); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+*,
+*::after,
+*::before {
+  /*    because they dont count in the */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* now every item in the CSS file
+                            will be forced to inherit 
+                            from the body declaration */ }
+
+/* 10/16 = 62.6 see rem-units.css doc */
+html {
+  font-size: 62.5%; }
+
+/* everything related to font, always specify in the body selector. will all be inherited by child elements */
+body {
+  box-sizing: border-box;
+  background-color: #ecf2f8; }
+
+body {
+  font-family: 'Manrope';
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.5; }
+
+h2 {
+  font-weight: 600;
+  color: #6d7f97;
+  letter-spacing: 0.5px; }
+
+p {
+  font-weight: 500;
+  Color: #9eafc2; }
+
+.date {
+  font-weight: 500; }
+
+.name {
+  color: #6d7f97; }
+
+.date {
+  color: #9eafc2; }
+
+.share {
+  color: #9eafc2;
+  background-color: #ecf2f8;
+  text-align: center;
+  line-height: 3.5rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100px;
+  font-size: 1.8rem;
+  bottom: 0; }
+
+.preview-component {
+  background-image: url(../../img/drawers.jpg);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80rem;
+  height: 28rem;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0.5rem 0.5rem 5rem 0.5rem rgba(72, 85, 106, 0.11); }
+
+.article {
+  width: 35rem;
+  margin-top: 3rem;
+  margin-left: 40rem; }
+
+.article-text p {
+  width: 35rem;
+  margin-top: 2rem; }
+
+.author {
+  height: 3.5rem;
+  position: relative;
+  margin-top: 2rem; }
+
+.avatar {
+  float: left;
+  border-radius: 100px;
+  height: 100%;
+  margin-right: 1.5rem; }
+
+.share {
+  position: absolute;
+  right: 0;
+  bottom: rem; }

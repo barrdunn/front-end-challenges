@@ -1,0 +1,41 @@
+body {
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-weight: 600;
+    color: $color-primary-medium-2;
+    letter-spacing: 0.5px;
+}
+
+p {
+    font-weight: 500;
+    Color: $color-primary-medium-1;
+}
+
+.date {
+    font-weight: 500;
+}
+
+.name {
+    color: $color-primary-medium-2;
+}
+
+.date {
+    color: $color-primary-medium-1;
+}
+
+.share {
+    color: $color-primary-medium-1;
+    background-color: $color-primary-light;
+    text-align: center;
+    line-height: 3.5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100px;
+    font-size: 1.8rem;
+    bottom: 0;
+}
